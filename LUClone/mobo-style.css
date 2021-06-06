@@ -1,0 +1,113 @@
+@media only screen and (max-width: 900px) {
+    header {
+        width: 100%;
+        position: sticky;
+        top: 0;
+    }
+    .header-container {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    nav {
+        position: fixed;
+        right: -100%;
+        background-color: rgb(18, 18, 18);
+        width: 60%;
+        height: 100vh;
+        align-self: flex-start;
+        top: 70px;
+        transition: 0.3s;
+    }
+    .header-container nav ul {
+        flex-direction: column;
+    }
+
+    .ham-container {
+        height: 40px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ham {
+        border-radius: 30px;
+        height: 3px;
+        background-color: white;
+        width: 90%;
+        position: relative;
+        transition: 0.3s;
+    }
+
+    .ham::before,
+    .ham::after {
+        content: "";
+        height: 3px;
+        background-color: white;
+        width: 90%;
+        position: absolute;
+        border-radius: 30px;
+        transition: 0.3s;
+    }
+
+    .ham::after {
+        transform: translateY(-10px);
+        width: 80%;
+    }
+
+    .ham::before {
+        width: 75%;
+        transform: translateY(10px);
+    }
+
+    .hover:hover .ham,
+    .ham-container:hover .ham {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .hover:hover .ham::before,
+    .ham-container:hover .ham::before {
+        transform: rotate(-45deg);
+        width: 90%;
+    }
+    .hover:hover .ham::after,
+    .ham-container:hover .ham::after {
+        transform: rotate(45deg);
+        width: 90%;
+    }
+
+    .hover:hover nav {
+        right: 0;
+    }
+
+    .default-banner {
+        flex-direction: column;
+    }
+
+    .text-section,
+    .image-section {
+        width: 90%;
+    }
+
+    .text-desc {
+        font-size: 12px;
+    }
+    .job-card {
+        width: 90%;
+        max-width: 300px;
+    }
+    .program-container {
+        flex-direction: column;
+    }
+    .program-card {
+        width: 80%;
+    }
+    footer > div {
+        flex-direction: column;
+    }
+    footer > div > div {
+        width: 80%;
+        /* text-align: center; */
+    }
+}

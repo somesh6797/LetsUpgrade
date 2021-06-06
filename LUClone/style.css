@@ -1,0 +1,550 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+
+body {
+    color: black;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.header-container {
+    height: 70px;
+    background-color: rgb(18, 18, 18);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.header-container .logo {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container nav {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.header-container nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+}
+
+.header-container nav ul li {
+    color: white;
+    list-style: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.header-container nav ul li i {
+    transform: translate(2px, 1.5px);
+}
+
+.header-container .logo img {
+    height: 40px;
+}
+
+/* Header complete */
+
+.default-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-section {
+    width: 50%;
+    color: white;
+    padding: 5%;
+    font-family: "poppins" sans-serif;
+}
+
+.text-head {
+    font-size: 32px;
+    font-stretch: extra-condensed;
+    font-weight: bold;
+}
+
+.text-desc {
+    font-weight: 500;
+    color: white;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.rating {
+    color: goldenrod;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.features {
+    margin-top: 20px;
+}
+
+.features i {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    margin-right: 10px;
+    color: hotpink;
+}
+
+.features p {
+    font-size: 14px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.share,
+.enrol {
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
+    background-color: rgb(255, 128, 43);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.share {
+    background-color: white;
+    border-color: rgb(224, 104, 23);
+    color: rgb(224, 104, 23);
+}
+
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.image-section img {
+    width: 95%;
+    padding: 2%;
+}
+
+section.feature-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section.feature-card-container .feature-card {
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    height: 120px;
+    width: 100px;
+    text-align: center;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+section.feature-card-container .feature-card i {
+    color: rgb(204, 0, 44);
+    font-size: 18px;
+}
+section.feature-card-container .feature-card p:nth-of-type(1) {
+    color: rgb(241, 113, 28);
+    font-weight: 500;
+    font-size: 14px;
+    padding-left: 2px;
+}
+
+section.feature-card-container .feature-card p:nth-of-type(2) {
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 5px;
+}
+
+.why-learn-container .image-section img {
+    width: 60%;
+}
+.why-learn-container .text-section .text-head {
+    color: black;
+}
+
+.why-learn-container .text-section p:nth-child(2),
+.why-learn-container .text-section p:nth-child(3) {
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-weight: 450;
+    color: black;
+}
+
+.why-learn-container .text-section span {
+    color: rgb(253, 138, 61);
+}
+
+.med-banner {
+    color: white;
+    background-color: rgb(27, 27, 27);
+    text-align: center;
+    padding: 30px;
+}
+
+.med-banner .register-button {
+    background-color: white;
+    outline: none;
+    border: 2px solid white;
+    padding: 5px 10px 5px 10px;
+    width: 150px;
+    border-radius: 2px;
+    transition: 0.3s;
+    font-weight: 700;
+}
+
+.med-banner .register-button i {
+    color: rgb(255, 136, 0);
+    font-size: 28px;
+}
+
+.med-banner .register-button:hover {
+    background-color: rgba(48, 48, 48, 0);
+    color: white;
+    cursor: pointer;
+}
+
+.job-card-container {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.job-card {
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    width: 20%;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.job-card .icon-side {
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+}
+
+.job-card .icon-side i {
+    font-size: 40px;
+    color: rgb(233, 117, 35);
+    margin-top: 10px;
+}
+.job-card .icon-side p {
+    background-color: rgba(255, 192, 147, 0.692);
+    font-size: 9px;
+    font-weight: 700;
+    color: chocolate;
+    border-radius: 4px;
+}
+
+.job-card .text-side {
+    padding: 10px;
+    width: 70%;
+    font-size: 14px;
+    font-weight: 900;
+}
+.job-card .text-side .skills {
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.small-banner {
+    background-color: white;
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+}
+
+.small-banner .text-head {
+    margin-top: 90px;
+    font-size: 28px;
+    color: black;
+}
+
+.small-banner .text-desc {
+    color: black;
+}
+
+.certificate-container {
+    background: linear-gradient(
+        0.94turn,
+        #ffa74f -27.49%,
+        rgb(255, 217, 250) 48.05%,
+        rgb(255, 255, 255) 114.11%
+    );
+    width: 100%;
+}
+
+.certificate-container p {
+    margin-top: 20px;
+}
+.certificate-container ul {
+    margin-left: 20px;
+}
+
+.certificate-container .text-section {
+    color: black;
+}
+
+.program-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        0.94turn,
+        #ffa74f -27.49%,
+        rgb(255, 217, 250) 48.05%,
+        rgb(255, 255, 255) 114.11%
+    );
+}
+
+.program-card {
+    width: 45%;
+    max-width: 500px;
+    margin: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.program-card .features {
+    margin-left: 30px;
+}
+
+.program-card .text-header {
+    font-size: 35px;
+    font-weight: 600;
+}
+.essential {
+    background-color: white;
+}
+
+.PGP {
+    background-color: rgb(18, 18, 18);
+    color: white;
+}
+
+.PGP .features i {
+    color: white;
+    font-size: 20px;
+    margin: 6px;
+}
+
+.essential .features i {
+    color: rgb(18, 18, 18);
+    font-size: 20px;
+    margin: 6px;
+}
+
+.PGP-enroll-button,
+.essential-enroll-button {
+    width: 90%;
+    align-self: center;
+}
+
+.tag {
+    background-color: blue;
+    font-size: 14px;
+    color: white;
+    padding: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.tag i {
+    color: white;
+}
+
+.slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+.slide-card {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+    width: 240px;
+    min-width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin: 30px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.slide-card .slide-desc {
+    font-size: 14px;
+}
+
+.trainer-card img {
+    border-radius: 50%;
+    width: 35%;
+    padding-bottom: 10px;
+}
+
+.trainer-card .trainer-role {
+    background-color: thistle;
+    color: rgb(95, 41, 95);
+    font-size: 14px;
+    border-radius: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.trainer-card .trainer-name {
+    font-weight: 600;
+}
+
+.upgrade-card i {
+    font-size: 40px;
+    color: rgb(195, 43, 226);
+}
+
+.upgrade-card p:nth-child(2) {
+    margin: 10px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.community-slider .slide-card {
+    align-self: flex-start;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.community-slider .slide-card img {
+    width: 240px;
+}
+
+.community-banner {
+    background: linear-gradient(
+        198.24deg,
+        #00ffc2 -70.28%,
+        rgba(255, 134, 211, 0.3) 76.1%,
+        hsla(0, 0%, 76.9%, 0) 118.56%
+    );
+}
+.community-slider {
+    background-color: transparent;
+}
+
+.testimonials-banner {
+    background: linear-gradient(
+        0.94turn,
+        #ffa74f -27.49%,
+        rgb(255, 217, 250) 48.05%,
+        rgb(255, 255, 255) 114.11%
+    );
+}
+
+.testimonials-slider {
+    background-color: transparent;
+}
+
+.testimonials-slider .student-card img {
+    height: 100px;
+}
+
+.student-card .student-name {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(27, 27, 27);
+}
+
+footer > .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 13px;
+    padding: 20px;
+}
+
+footer > div > div {
+    width: 20%;
+    margin: 15px;
+    color: rgb(161, 161, 161);
+}
+
+.head img {
+    height: 45px;
+}
+
+.head p {
+    font-size: 12px;
+    font-weight: 500;
+    font-style: italic;
+    color: white;
+}
+
+.program-links p:hover {
+    color: rgb(255, 115, 0);
+}
+.footer-links p:hover {
+    color: white;
+    font-weight: 700;
+}
+.copyright-text {
+    color: rgb(161, 161, 161);
+    font-size: 12px;
+}
+.social {
+    flex-direction: row;
+}
+.social i {
+    margin: 4px;
+    color: rgb(161, 161, 161);
+}
