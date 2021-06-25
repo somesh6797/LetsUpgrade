@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(-25deg, red, orange);
+    height: 100vh;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+}
+table {
+    background-color: white;
+    border-collapse: collapse;
+    border-spacing: 15px;
+    box-shadow: inset 0px 0px 10px rgb(143, 140, 140);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    width: 900px;
+}
+thead {
+    background-color: rgb(250, 80, 1);
+    border: 3px solid rgb(224, 34, 0);
+    color: white;
+}
+
+td,
+th {
+    border-spacing: 10px;
+    padding: 10px;
+}
+
+tbody tr:nth-child(odd) {
+    box-shadow: inset 0px 0px 5px rgb(161, 51, 0);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.filter-section {
+    background-color: rgb(247, 247, 247);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.404);
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 8px rgb(255, 150, 29);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-block: 30px;
+    width: 900px;
+}
+
+.input-box {
+    min-width: 180px;
+    width: 30%;
+    margin: 15px;
+    /* padding: 15px; */
+}
+
+input,
+button,
+select {
+    background-color: white;
+    width: 100%;
+    padding: 7px;
+    border-radius: 7px;
+    border: 2px solid rgb(255, 94, 0);
+    color: rgb(223, 45, 0);
+    outline: none;
+    font-size: 17px;
+}

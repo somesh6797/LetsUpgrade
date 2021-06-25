@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Filter</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="filter-section">
+                <div class="input-box">
+                    <input
+                        id="name"
+                        type="text"
+                        placeholder="Search Name"
+                        onkeyup="filter(this.value,'nameFilter')"
+                    />
+                </div>
+                <div class="input-box">
+                    <input
+                        id="city"
+                        type="text"
+                        placeholder="Search City"
+                        onkeyup="filter(this.value,'cityFilter')"
+                    />
+                </div>
+
+                <div class="input-box">
+                    <input
+                        id="role"
+                        type="text"
+                        placeholder="Search Role"
+                        onkeyup="filter(this.value,'roleFilter')"
+                    />
+                </div>
+
+                <div class="input-box">
+                    <select
+                        name=""
+                        id="gender"
+                        onclick="filter(this.value,'genderFilter')"
+                    >
+                        <option value="">All Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+
+                <div class="input-box">
+                    <select
+                        name=""
+                        id="qualification"
+                        onclick="filter(this.value,'qualificationFilter')"
+                    >
+                        <option value="">All Qualification</option>
+                        <option value="Bachelors">Bachelors</option>
+                        <option value="Masters">Masters</option>
+                        <option value="PHD">PHD</option>
+                    </select>
+                </div>
+                <div class="button-box">
+                    <button onclick="clearFilter()">Clear</button>
+                </div>
+            </div>
+
+            <div class="data-section">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>
+                                <span
+                                    style="font-size: 24px"
+                                    onclick="filter('asc','ageFilter')"
+                                >
+                                    &uparrow;
+                                </span>
+                                Age
+                                <span
+                                    style="font-size: 24px"
+                                    onclick="filter('dsc', 'ageFilter')"
+                                >
+                                    &downarrow;
+                                </span>
+                                <span
+                                    style="font-size: 22px; font-weight: 100"
+                                    onclick="filter('', 'ageFilter')"
+                                >
+                                    &#10006;
+                                </span>
+                            </th>
+                            <th>City</th>
+                            <th>Gender</th>
+                            <th>Qualification</th>
+                            <th>Company</th>
+                            <th>Role</th>
+                            <th>
+                                <span
+                                    style="font-size: 24px"
+                                    onclick="filter('asc','salFilter')"
+                                >
+                                    &uparrow;
+                                </span>
+                                Salary
+                                <span
+                                    style="font-size: 24px"
+                                    onclick="filter('dsc', 'salFilter')"
+                                >
+                                    &downarrow;
+                                </span>
+                                <span
+                                    style="font-size: 22px; font-weight: 100"
+                                    onclick="filter('', 'salFilter')"
+                                >
+                                    &#10006;
+                                </span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody"></tbody>
+                </table>
+            </div>
+        </div>
+        <script src="App.js"></script>
+    </body>
+</html>
